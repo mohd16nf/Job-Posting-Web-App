@@ -1,12 +1,14 @@
+/* JobListings.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
     background-color: rgb(227, 237, 237);
 }
+
+/* Navbar styles */
 
 #navbar {
     color: #2b3940;
@@ -38,91 +40,24 @@ body {
     background-color: rgb(227, 237, 237);
 }
 
+/* Scrolled navbar */
+
 .scrolled {
     transition: height 0.5s ease; /* Add transition for smooth animation */
     height: 60px; /* Adjust the height as needed */
 }
 
-#hero-container1 {
-    margin-bottom: 150px;
-}
+/* Job listing container */
 
-.btn-tags1 {
-    background-color: #00b074;
-}
-
-.input-tags {
-    width: 200px;
-    border-radius: 4px;
-    height: 60px;
-}
-
-.apply-btn{
-  background-color: #00b074;
-}
-
-.apply-now-btn{
-  background-color: #00b074;
-}
-
-#btn-heroPage{
-  background-color: #00b074;
-}
-
-.input-tags::placeholder {
-    color: rgb(59, 58, 58);
-}
-
-.input-placeholder-color {
-    color: #00b074;
-    cursor: pointer;
-}
-
-.option-items {
-    width: 200px;
-    padding: 9px 20px;
-    cursor: pointer;
-}
-
-#topCompanies-container {
-    background-color: #19191b;
-    width: 100%;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    padding-left: 50px;
-    align-items: center;
-}
-
-#icons-div1 {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#icons-div2 {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.icons {
-    color: #7d8081;
-    font-size: 60px;
-}
-
-/* Categories code here */
-
-/* Tailwind CSS */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     height: 100%;
+}
+.input-tags1{
+    width: 25vw;
+    height: 60px;
 }
 
 .btn-explore-all {
@@ -133,6 +68,12 @@ body {
     border-radius: 4px;
     text-decoration: none;
 }
+
+#btn-heroPage {
+    background-color: #00b074;
+}
+
+/* Job card styles */
 
 .card {
     width: calc(50% - 16px); /* Two cards per row */
@@ -156,60 +97,34 @@ body {
     color: #666;
 }
 
+/* Hero section heading */
+
 #heading {
     font-size: 65px;
     line-height: 70px;
 }
 
+/* Hero container styles */
+
 #heroPage-container {
     padding: 70px;
 }
 
-#categeries-cards-container {
-    padding: 80px;
-}
+/* Job card width */
 
 .job-card {
     width: 80vw;
-}
-
-#categery-heading{
-  font-size: 20px;
-}
-
-.categery-cards{
-  width: 22vw;
-}
-
-.sign-input-tags{
-  width: 50%;
-  height: 60px;
-}
-
-.signup-heading{
-  font-size: 40px;
-  padding-bottom: 10px;
-}
-
-.redirect-btn{
-  padding: 10px 15px;
-  background-color: #00b074;
-  border-radius: 5px;
-  margin-right: 10px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
     #heroPage-container {
         padding: -50px;
     }
+
     #hero-container1 {
         margin-bottom: -50px;
     }
 
-    .input-tags {
-        width: 150px;
-        height: 50px;
-    }
     #heading {
         font-size: 45px;
     }
@@ -218,55 +133,43 @@ body {
         width: 450px;
         height: 550px;
     }
-
-    .categery-cards{
-      width: 35vw;
-    }
-
-    .sign-input-tags{
-      width: 60%;
-      height: 60px;
-    }
 }
-
-
 
 @media screen and (min-width: 820px) and (max-width: 1023px) {
     #hero-container1 {
         margin-bottom: -50px;
     }
 
-    .input-tags {
-        width: 130px;
-        height: 40px;
-    }
     #heading {
         font-size: 45px;
     }
 
-    .categery-cards{
-      width: 40vw;
+    #btn-heroPage {
+        width: 100px;
+        height: 40px;
     }
 
-    .sign-input-tags{
-      width: 70%;
-      height: 60px;
+    #input-tags-container {
+        flex-direction: row;
     }
-
 }
+
+/* Media queries for smaller screens */
 
 @media screen and (min-width: 600px) and (max-width: 819px) {
     #hero-container1 {
         margin-bottom: -50px;
     }
 
-    .input-tags {
-        width: 125px;
-        height: 40px;
-    }
     #heading {
         font-size: 40px;
     }
+
+    #btn-heroPage {
+        width: 100px;
+        height: 40px;
+    }
+
     #hero-image {
         width: 350px;
         height: 450px;
@@ -276,6 +179,7 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
     #icons-div1 {
         flex-direction: column;
         align-items: center;
@@ -285,9 +189,7 @@ body {
         padding: 10px 50px;
     }
 
-    .categery-cards{
-      width: 80vw;
-    }
+   
 }
 
 @media screen and (min-width: 400px) and (max-width: 766px) {
@@ -295,62 +197,9 @@ body {
         font-size: 32px;
     }
 
-    #input-tags-container {
-        flex-direction: column;
-    }
-
-    .input-tags {
+    .input-tags1 {
         width: 80vw;
-        height: 55px;
-    }
-
-    .option-items {
-        width: 80vw;
-    }
-
-    #icons-div2 {
-        flex-direction: column;
-        align-items: center;
-    }
-    #icons-div1 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #hero-image{
-      margin-top: -100px;
-    }
-
-    #categeries-cards-container{
-      margin-top: -50px;
-    }
-
-    #categery-heading{
-      font-size: 20px;
-    }
-
-    .categery-cards{
-      width: 80vw;
-    }
-
-    .sign-input-tags{
-      width: 80%;
-      height: 60px;
-    }
-}
-
-@media screen and (min-width: 344px) and (max-width: 399px) {
-    #heading {
-        font-size: 32px;
-    }
-
-    #input-tags-container {
-        flex-direction: column;
-    }
-
-    .input-tags {
-        width: 300px;
-        height: 50px;
+    
     }
 
     #btn-heroPage {
@@ -366,15 +215,37 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
     #icons-div1 {
         flex-direction: column;
         align-items: center;
     }
 
-    #hero-image{
-      margin-top: -100px;
+    .hero-image-container {
+        padding-bottom: 100px;
     }
-    .categery-cards{
-      width: 90vw;
+
+    #categeries-cards-container {
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 344px) and (max-width: 399px) {
+    #heading {
+        font-size: 32px;
+    }
+
+    #input-tags-container {
+        flex-direction: column;
+    }
+
+    .input-tags1 {
+        width: 300px;
+        height: 50px;
+    }
+
+    #btn-heroPage {
+        width: 300px;
+        height: 50px;
     }
 }
