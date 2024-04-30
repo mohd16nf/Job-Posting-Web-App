@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <h2 className=" text-xl md:text-xl" id='logo'>
-            Coo!Cod3
+            OneJob
           </h2>
         </div>
         {/* Hamburger Menu */}

@@ -1,7 +1,7 @@
-import Navbar from "./pages/Navbar";
-import HeroPage from "./pages/heroPage";
-import TopCompanies from "./pages/TopCompanies";
-import Categeries from "./pages/categeries";
+import Navbar from "./Navbar";
+import HeroPage from "./heroPage";
+import TopCompanies from "./TopCompanies";
+import Categeries from "./categeries";
 import Footer from "./Footer";
 
 

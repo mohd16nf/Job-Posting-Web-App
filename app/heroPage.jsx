@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { IoSearchOutline, IoLocationOutline } from 'react-icons/io5';
 import { ChevronDownIcon } from '@heroicons/react/outline';
-import heroImg from '../../public/image3.png';
+import heroImg from '../public/image3.png';
 import Link from 'next/link'; // Import Link from Next.js
 
 const HeroPage = () => {

@@ -36,7 +36,7 @@ const Footer = () => {
         {/* Logo */}
         <div className="flex items-center justify-center md:justify-start mb-4 md:mb-0">
           <h2 className="text-xl md:text-xl" id='logo'>
-            Coo!Cod3
+          OneJob
           </h2>
         </div>
         {/* Navigation Links */}

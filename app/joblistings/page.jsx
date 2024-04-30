@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Data from '../Json file/data.json';
 import Link from 'next/link';
-import Navbar from '../pages/Navbar';
+import Navbar from '../Navbar';
 import { IoSearchOutline, IoLocationOutline } from 'react-icons/io5';
 import { ChevronDownIcon } from '@heroicons/react/outline';
 import './joblisting.css';

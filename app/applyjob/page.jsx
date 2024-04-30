@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import Navbar from '../pages/Navbar';
+import Navbar from '../Navbar';
 
 const JobDetails = () => {
   const job = {
